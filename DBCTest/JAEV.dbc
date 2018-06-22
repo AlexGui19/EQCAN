@@ -1,0 +1,295 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: BCM ICU OBC BMS MCU EVCU
+
+
+BO_ 1205 BCM_Msg_02: 8 BCM
+ SG_ BCM02_stWidthLight : 6|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM02_stRTrnLight : 10|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM02_stLTrnLight : 9|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM02_stLongLight : 8|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM02_stHeadLight : 7|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM02_stEmrgLight : 12|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM02_stBrkLight_Copy_1 : 11|1@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 1236 BCM_Msg_01: 8 BCM
+ SG_ BCM01_stTrunk : 3|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM01_stRRDoor : 7|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM01_stRFDoor : 5|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM01_stLRDoor : 6|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM01_stLFDoor : 4|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM01_stHostBelt : 8|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM01_stHood : 2|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BCM01_stAssisBelt : 9|1@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 148 EVCU_Msg_08: 8 EVCU
+ SG_ EVCU08_stWidthLight : 16|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stTrunk : 1|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stShift : 11|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stRTrnLight : 20|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stRRDoor : 5|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stRFDoor : 3|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stReverse : 10|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stPark : 8|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stNeutral : 9|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stLTrnLight : 19|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stLRDoor : 4|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stLowGear : 12|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stLongLight : 18|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stLFDoor : 2|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stHostBelt : 6|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stHood : 0|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stHighGear : 13|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stHeadLight : 17|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stEmrgLight : 22|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stBrkLight : 21|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_stAssisBelt : 7|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU08_lTotal : 31|24@0+ (0.1,0) [0|0] "km" Vector__XXX
+
+BO_ 650 EVCU_Msg_07: 8 EVCU
+ SG_ EVCU07_stRdy : 35|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU07_stBattFault : 18|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU07_st12VChrgFault : 34|1@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 1555 OBC_Msg_02: 8 OBC
+ SG_ OBC02_tInletWater : 23|8@0+ (1,0) [0|0] "¡æ" Vector__XXX
+
+BO_ 1553 OBC_Msg_01: 8 OBC
+ SG_ OBC01_stMode : 3|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ OBC01_stHVIL : 6|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ OBC01_stFault : 5|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ OBC01_stELock : 41|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ OBC01_stCPLine : 54|3@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ OBC01_stCCLine : 15|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ OBC01_iOutAct : 31|10@0+ (0.1,0) [0|0] "A" Vector__XXX
+
+BO_ 139 EVCU_Msg_06: 8 EVCU
+ SG_ EVCU06_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU06_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU06_nMotSpd : 39|16@0+ (1,0) [0|0] "rpm" Vector__XXX
+
+BO_ 136 EVCU_Msg_05: 6 EVCU
+ SG_ EVCU05_stBrk : 8|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU05_stMotTempFault : 14|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU05_stMotSysFault : 13|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU05_stMotRun : 15|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU05_stDrvMod : 12|3@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU05_rPower : 39|11@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ EVCU05_pwrVeh : 31|8@0+ (1,0) [0|0] "kw" Vector__XXX
+ SG_ EVCU05_vVehSpd : 7|8@0+ (1,0) [0|0] "km/h" Vector__XXX
+
+BO_ 1569 BMS_Msg_08: 8 BMS
+ SG_ BMS08_stBattInsulation : 17|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS08_resInsulation : 11|10@0+ (5,0) [0|0] "kOhm" Vector__XXX
+ SG_ BMS08_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS08_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 1560 BMS_Msg_07: 8 BMS
+ SG_ BMS07_tiChrgRemian : 10|11@0+ (1,0) [0|0] "min" Vector__XXX
+ SG_ BMS07_stChrg : 15|3@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS07_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS07_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 887 BMS_Msg_06: 8 BMS
+ SG_ BMS06_rSOH : 45|8@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ BMS06_rSOC : 39|10@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ BMS06_pwrMaxInstDischrg : 23|8@0+ (1,0) [0|0] "kW" Vector__XXX
+ SG_ BMS06_pwrMaxInstChrg : 7|8@0+ (1,0) [0|0] "kW" Vector__XXX
+ SG_ BMS06_pwrMaxContDischrg : 31|8@0+ (1,0) [0|0] "kW" Vector__XXX
+ SG_ BMS06_pwrMaxContChrg : 15|8@0+ (1,0) [0|0] "kW" Vector__XXX
+ SG_ BMS06_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS06_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 878 BMS_Msg_05: 8 BMS
+ SG_ BMS05_uChrgReq : 47|12@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ BMS05_tOutletWater : 15|8@0+ (0.5,0) [0|0] "¡æ" Vector__XXX
+ SG_ BMS05_tInletWaterTarget : 39|8@0+ (0.5,0) [0|0] "¡æ" Vector__XXX
+ SG_ BMS05_tInletWater : 7|8@0+ (0.5,0) [0|0] "¡æ" Vector__XXX
+ SG_ BMS05_stTempMngReq : 17|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS05_iChrgReq : 51|10@0+ (0.1,0) [0|0] "A" Vector__XXX
+ SG_ BMS05_dvolACFlowReq : 31|8@0+ (0.1,0) [0|0] "L/min" Vector__XXX
+ SG_ BMS05_dtWaterTChngReq : 21|4@0+ (1,0) [0|0] "¡æ/min" Vector__XXX
+
+BO_ 876 BMS_Msg_04: 8 BMS
+ SG_ BMS04_tBattMin : 23|8@0+ (0.5,0) [0|0] "¡æ" Vector__XXX
+ SG_ BMS04_tBattAvg : 7|8@0+ (0.5,0) [0|0] "¡æ" Vector__XXX
+ SG_ BMS04_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS04_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 779 BMS_Msg_03: 8 BMS
+ SG_ BMS03_stBkChrg : 4|3@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS03_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS03_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 678 BMS_Msg_02: 8 BMS
+ SG_ BMS02_uHVBus : 9|10@0+ (1,0) [0|0] "V" Vector__XXX
+ SG_ BMS02_uBatt : 31|10@0+ (1,0) [0|0] "V" Vector__XXX
+ SG_ BMS02_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS02_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS02_iBatt : 7|14@0+ (0.1,0) [0|0] "A" Vector__XXX
+
+BO_ 560 BMS_Msg_01: 8 BMS
+ SG_ BMS01_stPrechrgRlyWeld : 36|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stPrechrgRly : 28|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stPosRlyWeld : 38|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stPosRly : 30|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stNegRlyWeld : 37|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stNegRly : 29|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stMode : 3|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stIntellChrgReq : 11|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stHVILFault : 15|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stDLPrechrg : 45|3@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stDischrgRdy : 47|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stDischgFaultLvl : 55|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stCLPrechrg : 42|3@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stChrgFaultLvl : 35|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stBkSetReq : 4|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_stBkChrgReq : 12|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ BMS01_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 673 EVCU_Msg_04: 8 EVCU
+ SG_ EVCU04_uChrgReq : 47|12@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ EVCU04_stIntellChrgAlwd : 15|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU04_stDischrgCtl : 3|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU04_stChrgCtrl : 5|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU04_stBkSetAlwd : 9|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU04_stBkChrgAlwd : 7|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU04_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU04_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU04_iChrgReq : 25|10@0+ (0.1,0) [0|0] "A" Vector__XXX
+
+BO_ 632 MCU_Msg_05: 8 MCU
+ SG_ MCU05_stDgrdtUndrUdcHV : 47|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU05_stDgrdtOvrUdcLV : 32|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU05_stDgrdtOvrTemp : 35|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU05_stDgrdtOvrIdcLV : 34|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU05_stDgrdtOvrIdcHV : 33|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU05_stDCVltgErr : 36|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU05_stDCPwrLim : 38|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU05_stDCHWErr : 37|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU05_rLoadRateDC : 31|9@0+ (0.25,0) [0|0] "%" Vector__XXX
+ SG_ MCU05_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU05_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU05_iIdcLvCurrMax : 10|11@0+ (1,0) [0|0] "A" Vector__XXX
+
+BO_ 628 MCU_Msg_04: 8 MCU
+ SG_ MCU04_uUdcLvCurr : 0|9@0+ (0.125,0) [0|0] "V" Vector__XXX
+ SG_ MCU04_tDCCurr : 47|8@0+ (1,0) [0|0] "¡æ" Vector__XXX
+ SG_ MCU04_stDCMode : 7|3@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU04_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU04_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU04_iIdcLvCurr : 23|11@0+ (1,0) [0|0] "A" Vector__XXX
+ SG_ MCU04_iIdcHVCurr : 26|11@0+ (0.0625,0) [0|0] "A" Vector__XXX
+
+BO_ 625 MCU_Msg_03: 8 MCU
+ SG_ MCU03_stDgrdtOvrUdc : 2|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_tCurrNTC : 15|8@0+ (1,0) [0|0] "¡æ" Vector__XXX
+ SG_ MCU03_tCurrMCU : 23|8@0+ (1,0) [0|0] "¡æ" Vector__XXX
+ SG_ MCU03_tCurrCooling : 31|8@0+ (1,0) [0|0] "¡æ" Vector__XXX
+ SG_ MCU03_stReadyHV : 7|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_stMCUErrLight : 35|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_stDgrdtUndrUdc : 1|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_stDgrdtUndrIdc : 5|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_stDgrdtTrqMin : 4|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_stDgrdtTrqMax : 3|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_stDgrdtOvrTemp : 39|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_stDgrdtOvrIdc : 0|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_stCANErr : 38|3@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_stBattErrLight : 34|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_stACShCirRdy : 6|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU03_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 432 MCU_Msg_02: 8 MCU
+ SG_ MCU02_uUdcCurr : 23|10@0+ (1,0) [0|0] "V" Vector__XXX
+ SG_ MCU02_trqMin : 47|11@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ MCU02_trqMax : 26|11@0+ (1,0) [0|0] "Nm" Vector__XXX
+ SG_ MCU02_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU02_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU02_iIdcCur : 2|11@0+ (1,0) [0|0] "A" Vector__XXX
+
+BO_ 194 MCU_Msg_01: 8 MCU
+ SG_ MCU01_trqCurr : 23|11@0+ (0.25,0) [0|0] "Nm" Vector__XXX
+ SG_ MCU01_stMode : 55|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU01_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU01_numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ MCU01_nCurr : 7|15@0+ (1,0) [0|0] "rpm" Vector__XXX
+
+BO_ 133 EVCU_Msg_03: 8 EVCU
+ SG_ EVCU03_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU03_numChksum : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EVCU03_nShftSetP : 7|15@0+ (1,0) [0|0] "rpm" Vector__XXX
+ SG_ EVCU03__stShft : 55|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU03__stFaultFdbck : 31|5@0+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 418 EVCU_Msg_02: 8 EVCU
+ SG_ EVCU02_tOBCCoolingInlet : 46|8@0+ (1,0) [0|0] "¡æ" Vector__XXX
+ SG_ EVCU02__numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU02__numChksum : 63|8@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU02_uUdcLVSetP : 39|9@0+ (0.125,0) [0|0] "V" Vector__XXX
+ SG_ EVCU02_stDCModeReq : 12|3@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU02_stBMSMnRly : 28|2@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU02_iIdcLVSetP : 23|11@0+ (1,0) [0|0] "A" Vector__XXX
+ SG_ EVCU02_dTrqSlpMax : 7|11@0+ (8,0) [0|0] "Nm/s" Vector__XXX
+
+BO_ 184 EVCU_Msg_01: 8 EVCU
+ SG_ EVCU01_numChksum : 63|8@0+ (1,0) [0|255] "bit" Vector__XXX
+ SG_ EVCU01_numCntr : 51|4@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU01_stStrtCtl : 52|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU01_stCrash : 24|1@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU01_trqGrDes : 23|8@0+ (3,0) [0|0] "Nm" Vector__XXX
+ SG_ EVCU01_stModeReq : 13|3@0+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EVCU01_trqSetP : 7|10@0+ (0.25,0) [0|0] "Nm" Vector__XXX
+
+
+
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "BusType" "";
+BA_ "DBName" "JAEV";
+
